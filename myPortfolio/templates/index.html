@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,7 +10,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <title>Portfolio - Ganeshdarshan Bhat</title>
-    <link href="style.css" rel="stylesheet" />
+    <link href="{%static 'css/style.css' %}" rel="stylesheet" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -23,7 +24,7 @@
     ></script>
   </head>
   <body class="grad-background">
-    <div class="container">
+    <div class="container-fluid">
       <header
         class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
       >
@@ -33,7 +34,7 @@
         >
           
           <img
-            src="./main_logo.png"
+            src="{% static 'images/main_logo.png'%}"
             alt="symbol"
             style="max-width: 10%; margin-right: 10px"
           />
@@ -55,7 +56,7 @@
     <section>
       <div class="row flex-lg-row-reverse align-items-center g-5 px-5">
         <div class="col-10 col-sm-8 col-lg-6">
-          <img src="prog.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          <img src="{% static 'images/prog.png'%}" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
         </div>
         <div class="col-lg-6">
           <h1 class="display-5 fw-bold lh-1 mb-3">Ganeshdarshan Bhat</h1>
@@ -66,61 +67,61 @@
       </div>
     </section>
     <section>
-      <div class="container px-4 py-5" id="icon-grid">
+      <div class="container px-4 py-3" id="icon-grid">
         <h2 class="pb-2 border-bottom">Skills</h2>
     
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
           <div class="col d-flex align-items-start">
-            <img src="python.png" alt="python" style="max-width: 30px">
+            <img src="{% static 'images/python.png'%}" alt="python" style="max-width: 30px">
             <div>
               <h4 class="fw-bold mb-0 px-2">Python</h4>
               <p>Intermediate+</p>
             </div>
           </div>
           <div class="col d-flex align-items-start">
-            <img src="cpp.png" alt="c++" style="max-width: 25px">
+            <img src="{% static 'images/cpp.png'%}" alt="c++" style="max-width: 25px">
             <div>
               <h4 class="fw-bold mb-0 px-2"> C++</h4>
               <p>Intermediate+</p>
             </div>
           </div>
           <div class="col d-flex align-items-start">
-            <img src="c.png" alt="c" style="max-width: 30px">
+            <img src="{% static 'images/c.png'%}" alt="c" style="max-width: 30px">
             <div>
               <h4 class="fw-bold mb-0 px-2">C</h4>
               <p>Intermediate</p>
             </div>
           </div>
           <div class="col d-flex align-items-start">
-            <img src="html5.png" alt="html" style="max-width: 30px">
+            <img src="{% static 'images/html5.png'%}" alt="html" style="max-width: 30px">
             <div>
               <h4 class="fw-bold mb-0 px-2">HTML</h4>
               <p>Intermediate</p>
             </div>
           </div>
           <div class="col d-flex align-items-start">
-            <img src="css.png" alt="css" style="max-width: 25px">
+            <img src="{% static 'images/css.png'%}" alt="css" style="max-width: 25px">
             <div>
               <h4 class="fw-bold mb-0 px-2">CSS</h4>
               <p>Intermediate</p>
             </div>
           </div>
           <div class="col d-flex align-items-start">
-            <img src="ue.png" alt="ue" style="max-width: 30px">
+            <img src="{% static 'images/ue.png'%}" alt="ue" style="max-width: 30px">
             <div>
               <h4 class="fw-bold mb-0 px-2">Unreal Engine 5</h4>
               <p>Basics</p>
             </div>
           </div>
           <div class="col d-flex align-items-start">
-            <img src="python.png" alt="dj" style="max-width: 30px">
+            <img src="{% static 'images/python.png'%}" alt="dj" style="max-width: 30px">
             <div>
               <h4 class="fw-bold mb-0">Django</h4>
               <p>Basics</p>
             </div>
           </div>
           <div class="col d-flex align-items-start">
-            <img src="flask-logo.png" alt="flask" style="max-width: 25px">
+            <img src="{% static 'images/flask-logo.png'%}" alt="flask" style="max-width: 25px">
             <div>
               <h4 class="fw-bold mb-0 px-2">Flask</h4>
               <p class="px-2">Basics</p>
@@ -129,7 +130,7 @@
         </div>
       </div>
     </section>
-    <div class="container">
+    <div class="container-fluid">
       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <div class="col-md-4 d-flex align-items-center">
           <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
@@ -138,10 +139,10 @@
           <span class="text-muted">© 2023 </span>
         </div>
     
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3"><a class="text-muted" href="#"><img src="twitter.png" alt=""></a></li>
-          <li class="ms-3"><a class="text-muted" href="#"><img src="instagram.png" alt=""></a></li>
-          <li class="ms-3"><a class="text-muted" href="#"><img src="facebook.png" alt=""></a></li>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex px-5">
+          <li class="ms-3"><a class="text-muted" href="#"><img src="{% static 'images/twitter.png'%}" alt=""></a></li>
+          <li class="ms-3"><a class="text-muted" href="#"><img src="{% static 'images/instagram.png'%}" alt=""></a></li>
+          <li class="ms-3"><a class="text-muted" href="#"><img src="{% static 'images/facebook.png'%}" alt=""></a></li>
         </ul>
       </footer>
     </div>
