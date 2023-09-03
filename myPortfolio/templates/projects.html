@@ -49,9 +49,72 @@
           <!-- <li class="nav-item"><a href="#" class="nav-link">About</a></li> -->
           <li class="nav-item"><a href="/projects" class="nav-link active">Projects</a></li>
           <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
-          <li class="nav-item"><a href="/settings" class="nav-link">Settings</a></li>
+
         </ul>
       </header>
     </div>
+  <style>
+  /* Add this style block within your HTML file or include it in your CSS file */
+  .dark-gray-card {
+    background-color: #333;
+  }
+
+  .dark-gray-card * {
+    color: #fff !important;
+  }
+</style>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card shadow-sm dark-gray-card py-2 px-2">
+          <img src="https://source.unsplash.com/featured/300x203/?website,html" alt="Image 1" class="card-img-top">
+          <div class="card-body">
+            <p class="card-text">Snake Game - Python </p>
+            <a href="https://github.com/bhatganeshdarshan/Snake-Game" class="btn btn-sm btn-outline-secondary">View</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card shadow-sm dark-gray-card py-2 px-2">
+          <img src="https://source.unsplash.com/featured/300x203/?coding,python" alt="Image 2" class="card-img-top">
+          <div class="card-body">
+            <p class="card-text">Bank Branch API using Flask</p>
+            <a href="https://github.com/bhatganeshdarshan/Bank-branch-api" class="btn btn-sm btn-outline-secondary">View</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card shadow-sm dark-gray-card py-2 px-2">
+          <img src="https://source.unsplash.com/featured/300x203/?python,coding" alt="Image 3" class="card-img-top">
+          <div class="card-body">
+            <p class="card-text">Portfolio Website using Bootstrap and Django</p>
+            <a href="https://github.com/bhatganeshdarshan/Portfolio/tree/main" class="btn btn-sm btn-outline-secondary">View</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <div class="container-fluid">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-2 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <img src="main_logo.png" alt="" style="max-width: 35%;">
+          </a>
+          <span class="text-muted">© 2023 </span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex px-5">
+          <li class="ms-3"><a class="text-muted" href="#"><img src="{% static 'images/twitter.png'%}" alt=""></a></li>
+          <li class="ms-3"><a class="text-muted" href="#"><img src="{% static 'images/instagram.png'%}" alt=""></a></li>
+          <li class="ms-3"><a class="text-muted" href="#"><img src="{% static 'images/facebook.png'%}" alt=""></a></li>
+        </ul>
+      </footer>
+    </div>
+
   </body>
 </html>
