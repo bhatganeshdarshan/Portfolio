@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-ply@24!2z+*jty5plz+k)90gz-oi*!z*_%0+79t&c+ubv(i$nx
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'storages',
 ]
 
 MIDDLEWARE = [
@@ -76,8 +77,12 @@ WSGI_APPLICATION = 'myPortfolio.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME':'railway',
+        'USER':'postgres',
+        'PASSWORD':'qZrOxAsc53tbk2yjDApH',
+        'HOST':'containers-us-west-161.railway.app',
+        'PORT':'7835',
     }
 }
 
@@ -119,9 +124,22 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
+STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles_build','static')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+
+AWS_ACCESS_KEY_ID="AKIA5YDNMKSTGWFB4UBX"
+AWS_SECRET_ACCESS_KEY="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"
+
+AWS_STORAGE_BUCKET_NAME="my-portfolio-69"
+DEFAULT_FILE_STORAGE="storages.backends.s3boto3.S3Boto3Storage"
+STATICFILES_STORAGE="storages.backends.s3boto3.S3Boto3Storage"
+AWS_S3_CUSTOM_DOMAIN='%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
+
+
