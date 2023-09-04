@@ -1,6 +1,5 @@
 aardwolf==0.2.2
 adblockparser==0.7
-AdvancedHTTPServer==2.2.0
 aiocmd==0.1.2
 aioconsole==0.3.1
 aiodns==3.0.0
