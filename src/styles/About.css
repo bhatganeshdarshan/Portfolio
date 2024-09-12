@@ -89,6 +89,7 @@
     max-width: 250px;
     flex : 20% ; 
     background-color: transparent;
+    opacity: 0.7;
     border: 2px #88D66C solid;
     border-radius: 8px;
     z-index: 20;
@@ -104,7 +105,8 @@
 }
 
 .dark .resume-btn:hover{
-    background-color: #454444;
+    background-color: #333;
+    opacity: 0.9;
     box-shadow: 0 5px 15px 0 rgba(255, 255, 255, 0.3);
 }
 
@@ -117,9 +119,34 @@
     color: white;
 }
 
+.social-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 140px;
+}
+
+.Github-btn{
+    /* margin-bottom: 20px; */
+}
+
+.Linkedin-btn{
+
+}
+
 
 @media (max-width:768px) {
     .about-container{
         flex-direction: column;
+    }
+    .social-media{
+        flex-direction: row;
+        min-width: 140px;
+        justify-content: space-between;
+    }
+    .resume-btn{
+        /* justify-content: center; */
+        align-self: center;
     }
 }
