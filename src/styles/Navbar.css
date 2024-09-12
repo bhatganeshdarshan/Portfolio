@@ -1,0 +1,144 @@
+.navbar{
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    background-color: transparent;
+    z-index: 69;
+    background-color: transparent;
+    transition: background-color 0.25s ease-in-out;
+}
+
+.navbar.scrolled{
+    background-color: rgba(255,255,255,0.95);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.dark .navbar.scrolled {
+    background-color: rgba(26,32,44,0.95);
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding:10px 20px;
+}
+
+/* .nav-links .nav-menu.active{
+    display: flex;
+    list-style-type: none;
+} */
+
+.logo{
+    display: flex;
+    margin-right: auto;
+}
+
+.nav-menu{
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-menu a{
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 30px;
+    color: #333;
+}
+
+.dark .nav-menu a{
+    color: #f7fafc;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    background: linear-gradient(90deg, hsla(265, 83%, 57%, 1) 0%, hsla(296, 100%, 62%, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.controls{
+    display: flex;
+    align-items: center;
+}
+
+.controls button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right:20px;
+}
+
+.controls .menu-btn{
+    display: none;
+}
+
+.dark .controls button{
+    color: white;
+}
+
+.controls .icon{
+    height: 24px ;
+    width : 24px ; 
+}
+
+
+
+@media (max-width : 768px) {
+    .nav-links{
+        display: block;
+    }
+
+    .nav-menu{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70%;
+        /* right:100%; */
+        left : 0 ; 
+        background-color: white;
+        width: 100vw;
+        padding: 20px;
+        border-radius: 10px;
+        transition: max-height 0.3s ease-in-out , opacity 0.3s ease-in-out;
+        list-style-type: none;
+    }
+
+    .nav-menu.active{
+        display: flex;
+    }
+
+    .nav-menu li{
+        margin-bottom: 10px;
+    }
+
+    .nav-menu li:hover{
+        background-color: whitesmoke;
+    }
+
+    .nav-menu li a:hover{
+        font-size: 24px;
+        transition: background-color 0.4s ease-in-out;
+    }
+
+    .controls .menu-btn{
+        display: block;
+    }
+
+    .nav-menu li a{
+        color : #333 ; 
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .dark .nav-menu{
+        background-color: #1a202c;
+    }
+    .dark .nav-menu li a{
+        color : #f7fafc ;
+    }
+}
