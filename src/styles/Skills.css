@@ -1,0 +1,31 @@
+.skill-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .skill {
+    margin-bottom: 20px;
+  }
+  
+  .skill-name {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .skill-bar-outer {
+    display: flex;
+    margin: 15px auto;
+    width: 100%;
+    background: #efefef;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .skill-bar-inner {
+    background: #88D66C;
+    height: 100%;
+    transition: width 1.5s ease-in-out;
+  }
+  
