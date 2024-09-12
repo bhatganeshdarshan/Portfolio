@@ -1,4 +1,3 @@
-import React , {useState,useEffect} from 'react';
 import '../styles/About.css';
 import Resume from './buttons/Resume';
 import {Github , Linkedin} from 'lucide-react';
@@ -20,7 +19,7 @@ export default function About(){
             <div className='about'>
                 <h2>Hello I am </h2>
                 <h1>Ganeshdarshan</h1>
-                <h2>I am a Competitive Programmer</h2>
+                <h2>I am a <span className='cp-text'>Competitive Programmer</span></h2>
                 <div className='my-description'>
                    {description}
                 </div>
@@ -39,7 +38,7 @@ export default function About(){
                 </div>
             </div>
             <div className='profile-picture'>
-                <img src={profilePicture} className='circular-pic'></img>
+                <img src={profilePicture} className='circular-pic' alt='Profile'></img>
             </div>
         </div>
     );

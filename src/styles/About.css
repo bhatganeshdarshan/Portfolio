@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
 @keyframes float_light {
 	0% {
 		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
@@ -29,12 +29,16 @@
 	}
 }
 
+
 .about-container{
     display: flex;
     padding-top: 100px;
     margin: 50px 20px 30px 20px;
     align-items: center;
     justify-content: space-between;
+    font-family: "SUSE", sans-serif;
+    /* font-weight: bold; */
+    font-style: normal;
 }
 
 .about-container h1{
@@ -45,6 +49,15 @@
 .about-container h2{
     margin-bottom: 5px;
     margin-top: 0;
+}
+
+.cp-text{
+    color: #88D66C;
+}
+
+.about{
+    display : flex ; 
+    flex-direction: column;
 }
 
 .profile-picture{
@@ -64,6 +77,44 @@
     border: 5px white solid;
     box-shadow: 0px 5px 15px 0px rgba(255, 255, 255, 0.6);
     animation: float_dark 6s ease-in-out infinite;
+}
+
+.resume-btn{
+    flex-wrap: wrap;
+    margin: 35px 20px 40px;
+    position : relative ; 
+    /* text-decoration: none; */
+    padding: 15px;
+    min-width: 100px ; 
+    max-width: 250px;
+    flex : 20% ; 
+    background-color: transparent;
+    border: 2px #88D66C solid;
+    border-radius: 8px;
+    z-index: 20;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.resume-btn:hover{
+    background-color: #f5f5f5;
+    font-size: 18px;
+    transition: background-color,font-size 0.2s ease-in-out;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.2);
+}
+
+.dark .resume-btn:hover{
+    background-color: #454444;
+    box-shadow: 0 5px 15px 0 rgba(255, 255, 255, 0.3);
+}
+
+.resume-btn a{
+    text-decoration: none;
+    color: #333;
+}
+
+.dark .resume-btn a{
+    color: white;
 }
 
 
