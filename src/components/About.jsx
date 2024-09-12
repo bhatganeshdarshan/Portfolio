@@ -26,14 +26,14 @@ export default function About(){
                 <Resume></Resume>
             </div>
             <div className='social-media'>
-                <div className='Github-btn'>
+                <div>
                     <Link to='https://github.com/bhatganeshdarshan'>
-                        <Github></Github>
+                        <Github className='social-media-btn'></Github>
                     </Link>
                 </div>
-                <div className='Linkedin-btn'>
+                <div>
                     <Link to='https://linkedin.com/in/ganeshdarshan'>
-                        <Linkedin></Linkedin>
+                        <Linkedin className='social-media-btn'></Linkedin>
                     </Link>
                 </div>
             </div>
