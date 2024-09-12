@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 #skills{
-    padding: 60px;
+    padding:60px 20px 30px 20px;
+    
+     /* padding: 60px; */
 }
 
 .skills-header h1{
-  margin-left: -40px;
+  /* margin-left: -40px; */
   font-family : "Space Mono",monospace ; 
 }
 
@@ -69,7 +71,7 @@
   .cp-profile-cards{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
   }
 
   .cp-card-1{
@@ -83,7 +85,19 @@
     }
   } */
 
+  @media (min-width:768px) {
+    .skill-container{
+      margin: 50px;
+    }
+  }
+
   @media (max-width:768px) {
+    /* #skills{
+      padding: 60px;
+    }
+    .skills-header h1{
+      margin-left: 0;
+    } */
     /* .skill-name{
         display: flex;
         flex-wrap: wrap;
