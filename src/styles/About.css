@@ -32,7 +32,8 @@
 
 .about-container{
     display: flex;
-    padding-top: 100px;
+    padding-top: 120px;
+    /* align-self: center; */
     margin: 50px 20px 30px 20px;
     align-items: center;
     justify-content: space-between;
