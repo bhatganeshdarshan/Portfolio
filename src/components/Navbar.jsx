@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom';
 export default function Navbar(){
     const [isMenuOpen,setIsMenuOpen] = useState(false);
     const [scrolled,setScrolled] = useState(false);
-    const [darkMode,setDarkMode] = useState(false);
+    const [darkMode,setDarkMode] = useState(true);
 
     const navItems = ['Home','Projects','About','Contact'];
 
