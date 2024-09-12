@@ -3,10 +3,10 @@ import { Menu, X, Sun, Moon } from 'lucide-react';
 import { Link } from 'react-router-dom'; 
 import '../styles/Navbar.css'
 
-export default function Navbar() {
+export default function Navbar({darkMode,setDarkMode}) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
-    const [darkMode, setDarkMode] = useState(true);
+    // const [darkMode, setDarkMode] = useState(true);
 
     const navItems = ['Home', 'Skills', 'Projects', 'Contact'];
 
