@@ -4,6 +4,7 @@ import {Github , Linkedin} from 'lucide-react';
 import {Link} from 'react-router-dom';
 // import '../styles/images/profilePicture'
 import profilePicture from '../styles/images/profilePicture.jpeg';
+import {Typewriter} from 'react-simple-typewriter';
 
 export default function About(){
     const description = (
@@ -13,13 +14,23 @@ export default function About(){
           🌱 I’m currently learning React and NodeJS
         </>
       );
-
+    const typeWritetWords = [' Competitive Programmer',' Android Developer']
     return (
         <div className='about-container'>
             <div id="home" className='about'>
                 <h2>Hello I am </h2>
                 <h1>Ganeshdarshan</h1>
-                <h2>I am a <span className='cp-text'>Competitive Programmer</span></h2>
+                <h2>I am a 
+                    <span className='cp-text'>
+                        <Typewriter
+                            words={typeWritetWords}
+                            loop={0}
+                            cursor
+                            cursorStyle={'|'}
+                        >
+                        </Typewriter>
+                    </span>
+                </h2>
                 <div className='my-description'>
                    {description}
                 </div>
