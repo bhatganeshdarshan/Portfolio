@@ -2,7 +2,7 @@
 
 .display-projects{
     font-family: "SUSE", sans-serif;
-    margin: 60px 0 40px 0;
+    margin: 60px 40px 40px 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -65,10 +65,21 @@
     flex-wrap: wrap;
 }
 
+.project-detail{
+    display: flex;
+    align-items: center;
+}
+
+.project-detail .project{
+    padding-left: 30px;
+}
+
 .project-desc-text{
     display: flex;
     flex-direction: column;
 }
+
+
 
 @keyframes fade {
     0% {

@@ -2,6 +2,7 @@ import '../styles/Projects.css'
 import ProjectCard from './cards/ProjectCard';
 import logistics1 from '../../src/styles/images/logistics1.png';
 import logistics2 from '../../src/styles/images/logistics2.png';
+import { Truck, Smartphone, Lock, MapPin } from 'lucide-react'
 
 export default function Projects(){
   const projectList =[
@@ -23,10 +24,22 @@ export default function Projects(){
       // Real Time order tracking allowing customers to monitor their order's progress live 
       // `,
       pdesc : [
-        "Logistics app with a scalable backend using Supabase, efficiently managing up to 200 concurrent orders",
-        "Created Dedicated mobile app for delivery agents ",
-        "Two factor authentication via OTP using Twilio ",
-        "Real Time order tracking allowing customers to monitor their order's progress live ",
+        {
+          description: "Logistics app with a scalable backend using Supabase, efficiently managing up to 200 concurrent orders",
+          icon: Truck
+        },
+        {
+          description: "Created Dedicated mobile app for delivery agents",
+          icon: Smartphone
+        },
+        {
+          description: "Two factor authentication via OTP using Twilio",
+          icon: Lock
+        },
+        {
+          description: "Real Time order tracking allowing customers to monitor their order's progress live",
+          icon: MapPin
+        }
       ],
       ghLink : 'https://github.com/bhatganeshdarshan/Flutter-Logistic-app-project',
       stack  : ['Flutter','Supabase','PostgresQL','Google Maps API','DartFrog'],

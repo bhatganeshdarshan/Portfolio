@@ -18,9 +18,12 @@ export default function ProjectCard({ pname, pimg, pdesc, ghLink ,stack }) {
                    {
                     pdesc.map(
                         (project , index)=>(
-                            <p key={index} className='project'>
-                                {project}
-                            </p>
+                            <div key={index} className='project-detail'>
+                                <project.icon></project.icon>
+                                <p className='project'> 
+                                    {project.description}
+                                </p>
+                            </div>
                         )
                     )
 
