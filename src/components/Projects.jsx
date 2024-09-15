@@ -16,7 +16,18 @@ export default function Projects(){
     {
       pname  : 'Easy Logistics',
       pimg   : [logistics1,logistics2],
-      pdesc  : `Logistics Application for users and drivers to order or deliver products from one place to another`,
+      // pdesc  : `
+      // Logistics app with a scalable backend using Supabase, efficiently managing up to 200 concurrent orders 
+      // Created Dedicated mobile app for delivery agents 
+      // Two factor authentication via OTP using Twilio 
+      // Real Time order tracking allowing customers to monitor their order's progress live 
+      // `,
+      pdesc : [
+        "Logistics app with a scalable backend using Supabase, efficiently managing up to 200 concurrent orders",
+        "Created Dedicated mobile app for delivery agents ",
+        "Two factor authentication via OTP using Twilio ",
+        "Real Time order tracking allowing customers to monitor their order's progress live ",
+      ],
       ghLink : 'https://github.com/bhatganeshdarshan/Flutter-Logistic-app-project',
       stack  : ['Flutter','Supabase','PostgresQL','Google Maps API','DartFrog'],
     },
@@ -32,7 +43,7 @@ export default function Projects(){
   ];
   return (
       <div className="project-container" id='projects'>
-        <h1 style={{margin:'20px'}}>Projects</h1>
+        <h1 style={{margin:'20px 20px 0 20px'}}>Projects</h1>
         <div className='display-projects'>
           {
             projectList.map(

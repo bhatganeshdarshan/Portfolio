@@ -1,7 +1,11 @@
 // import phoneFrame from '../../styles/images/phoneFrame.png';
 // import Image from ''
+import Resume from '../../components/buttons/Resume.jsx';
 
 export default function ProjectCard({ pname, pimg, pdesc, ghLink ,stack }) {
+    const colors = ["#FF5733", "#33FF57", "#3357FF", "#FF33A1", "#FFC733"];
+    const colorlen = colors.length ; 
+    // const randColor = null ;
     return (
         <div className="project-display-container">
             <div className="img-container">
@@ -10,9 +14,34 @@ export default function ProjectCard({ pname, pimg, pdesc, ghLink ,stack }) {
             </div>
             <div className="project-description">
                 <h2>{pname}</h2>
-                <p>
-                    {pdesc}
-                </p>
+                <div className='project-desc-text'>
+                   {
+                    pdesc.map(
+                        (project , index)=>(
+                            <p key={index} className='project'>
+                                {project}
+                            </p>
+                        )
+                    )
+
+                   }
+                </div>
+                <div className='techstack-container'>
+                    {
+                        stack.map(
+                            (stk , index)=>(
+                                <p key={index} className='tech-stack' 
+                                style={{
+                                    color :  colors[
+                                        Math.floor(Math.random()*colorlen)%stack.length
+                                    ]
+                                }}
+                                >#{stk}</p>
+                            )
+                        )
+                    }
+                </div>
+                <Resume></Resume>
             </div>
         </div>
     );
