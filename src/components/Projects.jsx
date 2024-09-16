@@ -3,6 +3,7 @@ import ProjectCard from './cards/ProjectCard';
 import logistics1 from '../../src/styles/images/logistics1.png';
 import logistics2 from '../../src/styles/images/logistics2.png';
 import { Truck, Smartphone, Lock, MapPin } from 'lucide-react'
+import ProjectDescriptions from './ProjectDescriptions';
 
 export default function Projects(){
   const projectList =[
@@ -57,7 +58,7 @@ export default function Projects(){
   return (
       <div className="project-container" id='projects'>
         <h1 style={{margin:'20px 20px 0 20px'}}>Projects</h1>
-        <div className='display-projects'>
+        {/* <div className='display-projects'>
           {
             projectList.map(
               (project,index)=>(
@@ -65,8 +66,8 @@ export default function Projects(){
               )
             )
           }
-          {/* <ProjectCard pname={pname} pimg={pimg} pdesc={pdesc} ghLink={ghLink}/> */}
-        </div>
+        </div> */}
+        <ProjectDescriptions></ProjectDescriptions>
       </div>
     );
 }
