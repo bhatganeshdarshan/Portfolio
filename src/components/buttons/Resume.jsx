@@ -4,7 +4,12 @@ export default function Resume(){
     const resumeLink = "https://drive.google.com/file/d/1Z5lZ3nOLR16IdA4AtxAfrJPLGW6wTZQo/view?usp=sharing"; 
     return (
         <button className="resume-btn">
-            <Link to={resumeLink}>
+            <Link to={resumeLink}
+                onClick={(e)=>{
+                    e.preventDefault();
+                    window.open(resumeLink,'_blank');
+                }}
+            >
                 Download Resume
             </Link>
         </button>

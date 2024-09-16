@@ -39,7 +39,7 @@ const ProjectDescriptions = () => {
             <h2 className="project-title">Easy Logistics</h2>
             <div className='github-btn-container'>
               <button className='github-btn'>
-                <a href={gitHub}> Github </a>
+                <a href={gitHub} target="_blank" rel="noopener noreferrer"> Github </a>
               </button>
             </div>
           </div>

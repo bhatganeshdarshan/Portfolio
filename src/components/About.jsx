@@ -39,11 +39,21 @@ export default function About(){
             <div className='social-media'>
                 <div>
                     <Link to='https://github.com/bhatganeshdarshan'>
-                        <Github className='social-media-btn'></Github>
+                        <Github className='social-media-btn'
+                                onClick={(e)=>{
+                                    e.preventDefault();
+                                    window.open('https://github.com/bhatganeshdarshan','_blank');
+                                }}
+                        ></Github>
                     </Link>
                 </div>
                 <div>
-                    <Link to='https://linkedin.com/in/ganeshdarshan'>
+                    <Link to='https://linkedin.com/in/ganeshdarshan'
+                        onClick={(e)=>{
+                            e.preventDefault();
+                            window.open('https://linkedin.com/in/ganeshdarshan','_blank');
+                        }}
+                    >
                         <Linkedin className='social-media-btn'></Linkedin>
                     </Link>
                 </div>
