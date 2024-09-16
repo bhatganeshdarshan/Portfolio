@@ -6,7 +6,7 @@ import '../styles/Projects.css';
 
 const projectData = [
   {
-    description: "Logistics app with a scalable backend using Supabase, efficiently managing up to 200 concurrent orders",
+    description: "Logistics app with a scalable backend using Supabase",
     icon: Truck
   },
   {
@@ -25,7 +25,7 @@ const projectData = [
 const gitHub = "https://github.com/bhatganeshdarshan/Flutter-Logistic-app-project";
 const ProjectDescriptions = () => {
   return (
-    <div className="container">
+    <div className="p-container">
       <div className="project-layout">
         <div className="image-container">
           <img

@@ -4,7 +4,7 @@
     top: 0;
     background-color: transparent;
     z-index: 69;
-    background-color: transparent;
+    /* background-color: transparent; */
     transition: background-color 0.25s ease-in-out;
 }
 
@@ -14,7 +14,8 @@
 }
 
 .dark .navbar.scrolled {
-    background-color: rgba(26,32,44,0.95);
+    background-color: #000000e8;
+    box-shadow: 0 4px 12px rgba(255,255,255,0.1);
 }
 
 .container{
