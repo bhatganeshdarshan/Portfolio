@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem 1rem;
+    font-family: "SUSE", sans-serif;
+
+  }
+  .project-container h1{
+    font-family: "SUSE", sans-serif;
   }
   .project-layout {
     display: flex;
@@ -13,12 +19,13 @@
     width: 100%;
     height: auto;
     position: relative;
+    top: -35px;
     /* overflow: hidden; */
     border-radius: 41px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   }
   .dark .image-container{
-    box-shadow: 0 4px 6px rgba(255,255,255,0.2);
+    box-shadow: 0 5px 15px rgba(255,255,255,0.2);
   }
   .project-image {
     width: 100%;
@@ -26,6 +33,10 @@
     border-radius: 41px;
     object-fit: cover;
     transition: transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(255,255,255,0.3);
+  }
+  .dark .project-image{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
   }
   .project-image:hover {
     transform: scale(1.05);
@@ -103,6 +114,76 @@
   .project-card:hover .card-hover-effect {
     opacity: 1;
   }
+
+  .project-heading{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .github-btn {
+    background-color: transparent;
+    height: 40px;
+    width: 120px;
+    border-radius: 8px;
+    border: 0px solid transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, letter-spacing 0.4s ease-in-out;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .github-btn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 8px;
+    padding:1px;
+    background: linear-gradient(90deg, red, yellow, green, cyan, blue, purple, red);
+    background-size: 400%;
+    z-index: -1;
+    border: 2px solid transparent;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    animation: borderColorRotate 3s linear infinite;
+  }
+  
+  .github-btn a {
+    text-decoration: none;
+    color: #333;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .dark .github-btn {
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+  }
+  
+  .dark .github-btn a {
+    color: #fff;
+  }
+  
+  @keyframes borderColorRotate {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
+
+  .github-btn-container:hover .github-btn{
+    transform: scale(1.2);
+    letter-spacing: 0.25em;
+  }
+
+
   @media (min-width: 1024px) {
     .project-layout {
       flex-direction: row;

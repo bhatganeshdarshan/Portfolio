@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Truck, Smartphone, Lock, MapPin } from 'lucide-react';
+import { Truck, Smartphone, Lock, MapPin, Github } from 'lucide-react';
 import logistics1 from '../../src/styles/images/logistics1.png';
 import '../styles/Projects.css';
 
@@ -22,7 +22,7 @@ const projectData = [
     icon: MapPin
   }
 ];
-
+const gitHub = "https://github.com/bhatganeshdarshan/Flutter-Logistic-app-project";
 const ProjectDescriptions = () => {
   return (
     <div className="container">
@@ -35,7 +35,14 @@ const ProjectDescriptions = () => {
           />
         </div>
         <div className="project-details">
-          <h2 className="project-title">Easy Logistics</h2>
+          <div className='project-heading'>
+            <h2 className="project-title">Easy Logistics</h2>
+            <div className='github-btn-container'>
+              <button className='github-btn'>
+                <a href={gitHub}> Github </a>
+              </button>
+            </div>
+          </div>
           <div className="project-grid">
             {projectData.map((project, index) => (
               <motion.div
